@@ -17,7 +17,7 @@ dsp_QAICIDLS += inc/dsp
 dsp_C_SRCS += src/dsp_main src/dsp_test $V/dsp_stub
 dsp_LIBS += rpcmem
 dsp_DLLS += $(LIB_DSPRPC)
-dsp_LIBS += /home/flex/Qualcomm/Hexagon_SDK/3.4.3/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a
+dsp_LIBS += $(HEXAGON_SDK_ROOT)/tools/android-ndk-r14b/platforms/android-21/arch-arm64/usr/lib/libstdc++.a
 dsp_LD_FLAGS += -llog -ldl
 dsp_DEFINES += VERIFY_PRINT_ERROR
 
